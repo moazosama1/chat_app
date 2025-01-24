@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "954969621233",
+    "project_id": "testauth-e7586",
+    "storage_bucket": "testauth-e7586.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954969621233:android:a6ac4db04b75e2a68adf50",
+        "android_client_info": {
+          "package_name": "com.example.test_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArzeCLKcuvR3ASLKxKJPIM-VJMi6FHSUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

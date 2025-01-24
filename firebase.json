@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"testauth-e7586","appId":"1:954969621233:android:a6ac4db04b75e2a68adf50","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"testauth-e7586","configurations":{"android":"1:954969621233:android:a6ac4db04b75e2a68adf50","ios":"1:954969621233:ios:5e533e6cc7402b1c8adf50"}}}}}}
