@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:test_firebase/core/app_router.dart';
+import 'package:test_firebase/core/utils/theme.dart';
 import 'package:test_firebase/features/auth/presentation/view_model/auth_cubit.dart';
 import 'package:test_firebase/features/chat/presentation/view_model/chat_cubit.dart';
 import 'firebase_options.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp.router(
+        theme: ThemeModeInApp.themelight,
         title: 'Flutter Demo',
         routerConfig: AppRouter.router,
         debugShowCheckedModeBanner: false,

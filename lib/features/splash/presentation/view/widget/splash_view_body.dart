@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -14,16 +13,16 @@ class SplashViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     Future.delayed(
       const Duration(seconds: 3),
-      ()async {
-        SharedPreferences sharedPreferences =await SharedPreferences.getInstance();
+      () async {
+        SharedPreferences sharedPreferences =
+            await SharedPreferences.getInstance();
         String? user = sharedPreferences.getString("email");
-        if(user != null){
+        if (user != null) {
           BlocProvider.of<ChatCubit>(context).getMessages();
-          GoRouter.of(context).push(AppRouter.kHomeView,extra: user);
+          GoRouter.of(context).push(AppRouter.kHomeView, extra: user);
           print(user);
-        }
-        else{
-          GoRouter.of(context).push(AppRouter.kLoginView);
+        } else {
+          GoRouter.of(context).push(AppRouter.kHomeAuthView);
         }
       },
     );
