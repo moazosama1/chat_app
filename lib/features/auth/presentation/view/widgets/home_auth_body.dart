@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:test_firebase/core/app_router.dart';
@@ -7,7 +6,7 @@ import 'package:test_firebase/core/utils/image_path.dart';
 import 'package:test_firebase/features/auth/presentation/view/widgets/custom_button.dart';
 
 class HomeAuthViewBody extends StatelessWidget {
-  HomeAuthViewBody({Key? key}) : super(key: key);
+  HomeAuthViewBody({Key? key});
   ImagePathInApp imagePathInApp = ImagePathInApp();
   @override
   Widget build(BuildContext context) {

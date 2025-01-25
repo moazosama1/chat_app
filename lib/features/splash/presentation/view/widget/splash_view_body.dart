@@ -18,10 +18,12 @@ class SplashViewBody extends StatelessWidget {
             await SharedPreferences.getInstance();
         String? user = sharedPreferences.getString("email");
         if (user != null) {
+          // ignore: use_build_context_synchronously
           BlocProvider.of<ChatCubit>(context).getMessages();
+          // ignore: use_build_context_synchronously
           GoRouter.of(context).push(AppRouter.kHomeView, extra: user);
-          print(user);
         } else {
+          // ignore: use_build_context_synchronously
           GoRouter.of(context).push(AppRouter.kHomeAuthView);
         }
       },
